@@ -1,0 +1,31 @@
+/* Base Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap; /* Allows columns to wrap on small screens */
+}
+
+.content-column-left {
+  flex: 1; /* Each column grows equally */
+  min-width: 300px; /* Minimum width before wrapping */
+  padding: 20px;
+  background: #3a5d8a;
+  height: 600px;
+}
+.content-column-right{
+  flex: 1; /* Each column grows equally */
+  min-width: 300px; /* Minimum width before wrapping */
+  padding: 20px;
+  background: #F4F6F8;
+}
+
+/* Optional: Add a max-width to prevent overly wide columns */
+@media (min-width: 1200px) {
+  .content-column {
+    max-width: calc(50% - 10px); /* Accounts for gap */
+  }
+}
