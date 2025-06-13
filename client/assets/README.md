@@ -1,0 +1,1 @@
+This is the directory that stores project assets such as images
