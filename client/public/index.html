@@ -9,11 +9,44 @@
 <body>
   <main class="container">
     <section class="content-column-left">
-      <img src="../assets/woman-organizing.jpg" alt="Woman organizing her work">
+      <img src="woman-organizing.jpg" class="login-page-image" alt="Woman organizing her work">
+      <h2>Organize your stuffs with us here at Task Hive</h2>
     </section>
     <aside class="content-column-right">
       <h2>Right Column</h2>
       <p>This is the second column (could be a sidebar).</p>
+      <div class="form-container">
+        <h1>Sign Up</h1>
+        <form class="form">
+          <!-- Input fields -->
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+          </div>
+
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Create a password" required>
+          </div>
+
+          <!-- Checkbox (Remember Me) -->
+          <div class="form-group remember-me">
+            <input type="checkbox" id="remember">
+            <label for="remember">Remember me</label>
+          </div>
+
+          <!-- Submit Button -->
+          <button type="submit" class="submit-btn">Sign Up</button>
+
+          <!-- Alternative Login Option -->
+          <p class="login-link">Already have an account? <a href="#">Log in</a></p>
+        </form>
+      </div>
     </aside>
   </main>
 </body>
